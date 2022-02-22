@@ -2,33 +2,33 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.PlaceholderFragment">
+    tools:context=".SecondFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#328346"
-        app:tabTextColor="@color/white"
-        tools:ignore="MissingConstraints" >
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/opciones"
-            >      </com.google.android.material.tabs.TabItem>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/opcionesA"
-            >            >      </com.google.android.material.tabs.TabItem>
+            android:background="#328346"
+            app:tabTextColor="@color/white"
+            tools:ignore="MissingConstraints" >
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opciones"
+                >      </com.google.android.material.tabs.TabItem>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcionesA"
+                >            >      </com.google.android.material.tabs.TabItem>
 
 
-    </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.tabs.TabLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,14 @@
             android:drawableLeft="@drawable/ic_baseline_info_24"
             android:padding="20dp" />
         <Button
-            android:layout_marginTop="100dp"
+            android:id="@+id/button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center" />
+        <Button
+            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -90,4 +97,6 @@
                 android:src="@drawable/twitter"/>
         </LinearLayout>
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

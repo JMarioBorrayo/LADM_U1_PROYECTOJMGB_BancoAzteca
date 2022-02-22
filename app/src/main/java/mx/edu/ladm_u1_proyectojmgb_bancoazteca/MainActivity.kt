@@ -29,12 +29,6 @@ class MainActivity : AppCompatActivity() {
         }
         botonO.setOnClickListener {
 
-                AlertDialog.Builder(this)
-                    .setTitle("Cambio de configuracion")
-                    .setMessage("Ingresara a una nueva pantalla")
-                    .setPositiveButton("Aceptar", {d,i-> d.dismiss()})
-                    .setNegativeButton("Salir",{d,i ->d.cancel()})
-                    .show()
             llamarTerceraActivity()
         }
     }
