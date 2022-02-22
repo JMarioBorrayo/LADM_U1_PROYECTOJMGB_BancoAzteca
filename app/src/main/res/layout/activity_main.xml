@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@drawable/background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inicio"
+        android:text="Inicio de Sesion"
+        android:textColor="@color/white"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="60dp"
+        android:id="@+id/usuario"
+        android:layout_below="@+id/inicio"
+        android:background="#30ffffff"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_emoji_people_24"
+        android:padding="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+
+        android:layout_marginHorizontal="60dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/contra"
+        android:layout_below="@+id/usuario"
+        android:background="#30ffffff"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:padding="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/other"
+        android:layout_above="@+id/socials"
+        android:text="Ingresar Con"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botonI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/contra"
+        android:layout_centerHorizontal="true"
+        android:text="Ingresar"
+        android:backgroundTint="#089DE1"
+
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <Button
+        android:id="@+id/botonO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/botonI"
+        android:layout_centerHorizontal="true"
+        android:text="Olvide mi contraseña"
+        android:backgroundTint="#089DE1"
+
+        app:layout_constraintVertical_bias="0.2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/socials"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/bancoazteca"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/fb"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/twitter"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
